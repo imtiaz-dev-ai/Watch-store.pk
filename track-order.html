@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Track Order | Watch Store</title>
+  <meta name="description" content="Check your Watch Store order details and contact us for delivery updates.">
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+  <link rel="stylesheet" href="assets/css/store.css">
+</head>
+<body data-page="track-order">
+  <noscript><div style="background:#7a1f1f;color:#fff;padding:10px 16px;text-align:center">Please enable JavaScript to track your order.</div></noscript>
+  <div id="site-header"></div>
+  <main id="app">
+    <section class="page-hero">
+      <div class="container">
+        <h1>Track Your <em>Order</em></h1>
+        <div class="breadcrumb"><a href="#/home">Home</a><span class="sep">›</span><span class="cur">Track Order</span></div>
+      </div>
+    </section>
+    <section class="shop-section">
+      <div class="container">
+        <div class="form-card track-card">
+          <h2 style="font-family:var(--serif);font-size:24px;margin-bottom:8px">Order status</h2>
+          <p style="color:var(--muted);margin-bottom:20px">Enter the order number from your confirmation. Orders are looked up on the same device where they were placed.</p>
+          <form id="track-order-form">
+            <div class="field">
+              <label for="track-order-number">Order Number</label>
+              <input id="track-order-number" name="order" required autocomplete="off" placeholder="e.g. WS-12345678">
+            </div>
+            <button class="btn" type="submit" style="margin-top:18px">Find Order</button>
+          </form>
+          <div class="track-result" id="track-order-result" aria-live="polite"></div>
+          <p style="color:var(--muted);font-size:13px;margin-top:18px">Need help? <a href="https://wa.me/923006693524" target="_blank" rel="noopener noreferrer" style="color:var(--gold-deep);font-weight:600">Message us on WhatsApp</a> or visit our <a href="#/contact" style="color:var(--gold-deep);font-weight:600">Contact Us</a> page.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div id="site-footer"></div>
+  <script src="assets/js/store.js"></script>
+</body>
+</html>
