@@ -7,26 +7,6 @@ const ASSETS = {
   "assets/img/hero-2.png": "assets/img/hero-2.jpg",
   "assets/img/hero-3.png": "assets/img/hero-3.jpg",
   "assets/img/logo.png": "assets/img/logo.png",
-  "assets/img/products/p1.png": "assets/img/products/p1.jpg",
-  "assets/img/products/p10.png": "assets/img/products/p10.jpg",
-  "assets/img/products/p11.png": "assets/img/products/p11.jpg",
-  "assets/img/products/p12.png": "assets/img/products/p12.jpg",
-  "assets/img/products/p13.png": "assets/img/products/p13.jpg",
-  "assets/img/products/p14.png": "assets/img/products/p14.jpg",
-  "assets/img/products/p15.png": "assets/img/products/p15.jpg",
-  "assets/img/products/p16.png": "assets/img/products/p16.jpg",
-  "assets/img/products/p17.png": "assets/img/products/p17.jpg",
-  "assets/img/products/p18.png": "assets/img/products/p18.jpg",
-  "assets/img/products/p19.png": "assets/img/products/p19.jpg",
-  "assets/img/products/p2.png": "assets/img/products/p2.jpg",
-  "assets/img/products/p20.png": "assets/img/products/p20.jpg",
-  "assets/img/products/p3.png": "assets/img/products/p3.jpg",
-  "assets/img/products/p4.png": "assets/img/products/p4.jpg",
-  "assets/img/products/p5.png": "assets/img/products/p5.jpg",
-  "assets/img/products/p6.png": "assets/img/products/p6.jpg",
-  "assets/img/products/p7.png": "assets/img/products/p7.jpg",
-  "assets/img/products/p8.png": "assets/img/products/p8.jpg",
-  "assets/img/products/p9.png": "assets/img/products/p9.jpg",
   "assets/img/sale-banner.png": "assets/img/sale-banner.jpg"
 };
 
@@ -36,52 +16,81 @@ const ASSETS = {
    ============================================================ */
 
 const PRODUCTS = [
-  { id: 1,  name: 'Casio Edifice Chronograph', brand: 'Casio',        cat: 'men',    price: 24999,  old: 31499,  badge: null, img: ASSETS['assets/img/products/p1.png'],
-    desc: 'A striking stainless steel chronograph built for precision. Black dial with luminous hands, stopwatch function and 100-meter water resistance make it a perfect everyday companion.' },
-  { id: 2,  name: 'Seiko 5 Automatic',         brand: 'Seiko',        cat: 'men',    price: 27999,  old: null,   badge: 'New', img: ASSETS['assets/img/products/p2.png'],
-    desc: 'Powered by the legendary Seiko automatic movement with 21 jewels. Deep blue sunburst dial, day-date window and a polished stainless steel bracelet for timeless style.' },
-  { id: 3,  name: 'Rolex Datejust 41',         brand: 'Rolex',        cat: 'luxury', price: 69999,  old: 82899,  badge: null, img: ASSETS['assets/img/products/p3.png'],
-    desc: 'The iconic Datejust with a rich green dial and fluted gold bezel. Self-winding movement, Cyclops lens over the date and a jubilee bracelet — pure horological prestige.' },
-  { id: 4,  name: 'Tissot Chronograph XL',     brand: 'Tissot',       cat: 'men',    price: 42999,  old: null,   badge: 'Hot', img: ASSETS['assets/img/products/p4.png'],
-    desc: 'Swiss precision meets bold design. Black chronograph dial with three sub-dials, tachymeter scale and scratch-resistant sapphire glass on a brushed steel bracelet.' },
-  { id: 5,  name: 'Fossil Classic Gold',       brand: 'Fossil',       cat: 'men',    price: 19999,  old: 24999,  badge: null, img: ASSETS['assets/img/products/p5.png'],
-    desc: 'A refined gold-tone dress watch with a minimalist black dial. Slim case profile, quartz accuracy and genuine leather comfort — elegance for every occasion.' },
-  { id: 6,  name: 'Omega Seamaster',           brand: 'Omega',        cat: 'luxury', price: 89999,  old: null,   badge: 'New', img: ASSETS['assets/img/products/p6.png'],
-    desc: 'A legendary dive watch with deep blue wave dial and gold accents. Helium escape valve, 300m water resistance and Master Chronometer certified precision.' },
-  { id: 7,  name: 'Casio G-Shock',             brand: 'Casio',        cat: 'men',    price: 22999,  old: 29999,  badge: null, img: ASSETS['assets/img/products/p7.png'],
-    desc: 'Shock-resistant digital toughness with a silver resin case and blue accents. World time, stopwatch, countdown timer and 200-meter water resistance.' },
-  { id: 8,  name: 'Rado Centrix Gold',         brand: 'Rado',         cat: 'luxury', price: 39999,  old: 50999,  badge: null, img: ASSETS['assets/img/products/p8.png'],
-    desc: 'Scratch-resistant high-tech ceramic meets warm gold tones. Dark green dial with slim gold hands on an elegant bracelet — understated luxury.' },
-  { id: 9,  name: 'Rolex Submariner',          brand: 'Rolex',        cat: 'luxury', price: 129999, old: null,   badge: 'Hot', img: ASSETS['assets/img/products/p9.png'],
-    desc: 'The reference among dive watches. Black dial, unidirectional rotatable bezel, Chromalight display and Oystersteel bracelet — built for the deep.' },
-  { id: 10, name: 'Omega Speedmaster',         brand: 'Omega',        cat: 'luxury', price: 98999,  old: 118999, badge: null, img: ASSETS['assets/img/products/p10.png'],
-    desc: 'The Moonwatch. Manual-winding chronograph with black dial, tachymeter bezel and the heritage of space flight on a brushed steel bracelet.' },
-  { id: 11, name: 'Seiko Presage',             brand: 'Seiko',        cat: 'men',    price: 45999,  old: 51999,  badge: null, img: ASSETS['assets/img/products/p11.png'],
-    desc: 'Japanese craftsmanship with a champagne sunburst dial, automatic movement and sapphire crystal. A dress watch with decades of watchmaking heritage.' },
-  { id: 12, name: 'Tissot PRX Powermatic',     brand: 'Tissot',       cat: 'men',    price: 38499,  old: null,   badge: 'New', img: ASSETS['assets/img/products/p12.png'],
-    desc: 'A 1978 icon reborn. Integrated steel bracelet, blue sunburst dial and the automatic Powermatic 80 movement with 80 hours of power reserve.' },
-  { id: 13, name: 'Michael Kors Parker',       brand: 'Michael Kors', cat: 'women',  price: 34999,  old: 42999,  badge: null, img: ASSETS['assets/img/products/p13.png'],
-    desc: 'Glamorous rose gold watch with a sparkling crystal-set bezel and clean white dial. The perfect statement piece from day to evening.' },
-  { id: 14, name: 'Fossil Jacqueline',         brand: 'Fossil',       cat: 'women',  price: 27499,  old: null,   badge: 'New', img: ASSETS['assets/img/products/p14.png'],
-    desc: 'Vintage-inspired elegance with a slim rose gold case and taupe leather strap. Minimal numerals and a delicate profile for effortless style.' },
-  { id: 15, name: 'Anne Klein Bracelet Watch', brand: 'Anne Klein',   cat: 'women',  price: 18999,  old: 23499,  badge: null, img: ASSETS['assets/img/products/p15.png'],
-    desc: 'A classic gold-tone bracelet watch with iridescent mother-of-pearl dial. Timeless, versatile and made to be layered with your favorite bangles.' },
-  { id: 16, name: 'Coach Grand',               brand: 'Coach',        cat: 'women',  price: 31999,  old: null,   badge: 'New', img: ASSETS['assets/img/products/p16.png'],
-    desc: 'Refined rose gold case with a warm brown leather strap and a minimal dial. Modern sophistication with signature Coach craftsmanship.' },
-  { id: 17, name: 'Casio Vintage Gold',        brand: 'Casio',        cat: 'women',  price: 9999,   old: 12999,  badge: null, img: ASSETS['assets/img/products/p17.png'],
-    desc: 'The iconic retro digital in a slim gold-tone finish. LED light, daily alarm and stopwatch — a cult classic back in style.' },
-  { id: 18, name: 'Fossil Tailor Mesh',        brand: 'Fossil',       cat: 'women',  price: 24499,  old: 29999,  badge: null, img: ASSETS['assets/img/products/p18.png'],
-    desc: 'Delicate rose gold mesh bracelet with a slim case and pearl-white dial. Feminine, lightweight and endlessly wearable.' },
-  { id: 19, name: 'Omega De Ville Prestige',   brand: 'Omega',        cat: 'luxury', price: 112999, old: 134999, badge: null, img: ASSETS['assets/img/products/p19.png'],
-    desc: 'Understated elegance in gold with a silver lacquered dial and brown leather strap. Co-axial precision for the true connoisseur.' },
-  { id: 20, name: 'Rado HyperChrome',          brand: 'Rado',         cat: 'men',    price: 47999,  old: 55999,  badge: null, img: ASSETS['assets/img/products/p20.png'],
-    desc: 'Lightweight high-tech titanium case with a matte black dial. Swiss automatic movement in a sporty, modern silhouette.' },
+  { id: 24, name: 'Brownlo Ladies Watch - Style 1', brand: 'Brownlo', cat: 'women', price: 5000, old: 10000, badge: null, img: 'assets/img/products/imported/24.jpeg',
+    desc: 'An elegant ladies’ timepiece with a polished look, made to complement everyday outfits and special occasions.' },
+  { id: 25, name: 'Brownlo Ladies Watch - Style 2', brand: 'Brownlo', cat: 'women', price: 5000, old: 10000, badge: null, img: 'assets/img/products/imported/25.jpeg',
+    desc: 'A refined watch for women that brings a graceful finishing touch to both casual and dressed-up looks.' },
+  { id: 26, name: 'Fossil Women’s Silver Crystal Bezel Watch', brand: 'Fossil', cat: 'women', price: 12500, old: 15500, badge: null, img: 'assets/img/products/imported/26.jpeg',
+    desc: 'A silver-tone Fossil ladies’ watch with a crystal bezel and mother-of-pearl dial for a bright, elegant look.' },
+  { id: 27, name: 'Fossil Women’s Silver Crystal Bracelet Watch', brand: 'Fossil', cat: 'women', price: 12500, old: 25500, badge: null, img: 'assets/img/products/imported/27.jpeg',
+    desc: 'A silver stainless-steel bracelet watch with crystal detailing, designed to add a touch of sparkle to your outfit.' },
+  { id: 28, name: 'Michael Kors Ladies Watch', brand: 'Michael Kors', cat: 'women', price: 16500, old: 25500, badge: null, img: 'assets/img/products/imported/28.jpeg',
+    desc: 'A stylish Michael Kors ladies’ watch with a polished, statement-making finish for everyday wear or occasions.' },
+  { id: 29, name: 'CK Imported Piece Watch', brand: 'CK', cat: 'men', price: 18500, old: 25500, badge: null, img: 'assets/img/products/imported/29.jpeg',
+    desc: 'A clean, contemporary CK imported watch with a versatile look for daily wear.' },
+  { id: 30, name: 'Omega Seamaster Automatic Watch', brand: 'Omega', cat: 'men', price: 19500, old: 28500, badge: null, img: 'assets/img/products/imported/30.jpeg',
+    desc: 'An automatic Omega Seamaster-style men’s watch with a classic sport-inspired design.' },
+  { id: 31, name: 'Omega Seamaster Automatic Blue Dial', brand: 'Omega', cat: 'men', price: 19500, old: 28500, badge: null, img: 'assets/img/products/imported/31.jpeg',
+    desc: 'An automatic men’s watch with a blue-dial Seamaster-inspired look.' },
+  { id: 32, name: 'Omega Seamaster Diver 300M Green Dial', brand: 'Omega', cat: 'men', price: 19500, old: 28500, badge: null, img: 'assets/img/products/imported/32.jpeg',
+    desc: 'A green-dial automatic dive-style watch with a bold, sporty appearance.' },
+  { id: 33, name: 'Omega Seamaster Professional Diver Two-Tone', brand: 'Omega', cat: 'men', price: 19500, old: 28500, badge: null, img: 'assets/img/products/imported/33.jpeg',
+    desc: 'A two-tone black-dial dive-style watch with a distinctive stainless-steel look.' },
+  { id: 34, name: 'Omega Speedmaster Flight Qualified Chronograph', brand: 'Omega', cat: 'men', price: 23500, old: 38500, badge: null, img: 'assets/img/products/imported/34.jpeg',
+    desc: 'A chronograph-style men’s watch inspired by the Omega Speedmaster collection.' },
+  { id: 35, name: 'Original Seiko 5 Automatic', brand: 'Seiko', cat: 'men', price: 20000, old: 35000, badge: null, img: 'assets/img/products/imported/35.jpeg',
+    desc: 'A Seiko 5 automatic men’s watch with a classic everyday design.' },
+  { id: 36, name: 'Patek Philippe Nautilus Gold Automatic', brand: 'Patek Philippe', cat: 'men', price: 27500, old: 38500, badge: null, img: 'assets/img/products/imported/36.jpeg',
+    desc: 'A gold-tone automatic watch with an eye-catching Nautilus-inspired profile.' },
+  { id: 37, name: 'Patek Philippe Two-Tone Automatic Watch', brand: 'Patek Philippe', cat: 'men', price: 27500, old: 38500, badge: null, img: 'assets/img/products/imported/37.jpeg',
+    desc: 'A two-tone automatic watch with a refined, luxury-inspired appearance.' },
+  { id: 38, name: 'Diesel Machinus Multi-Time Zone DZ6362', brand: 'Diesel', cat: 'men', price: 24500, old: 38500, badge: null, img: 'assets/img/products/imported/38.jpeg',
+    desc: 'A bold Diesel Machinus watch with a multi-time-zone design and statement-making case.' },
+  { id: 39, name: 'Diesel Uber Chief Leather Strap DZ7376', brand: 'Diesel', cat: 'men', price: 24500, old: 38500, badge: null, img: 'assets/img/products/imported/39.jpeg',
+    desc: 'A Diesel Uber Chief men’s watch paired with a classic leather strap.' },
+  { id: 40, name: 'Emporio Armani Claudio Leather Chronograph AR11498', brand: 'Emporio Armani', cat: 'men', price: 24500, old: 38500, badge: null, img: 'assets/img/products/imported/40.jpeg',
+    desc: 'A Claudio chronograph-style watch with a black leather strap and silver-tone dial.' },
+  { id: 41, name: 'Emporio Armani Diver Blue Dial AR11587', brand: 'Emporio Armani', cat: 'men', price: 23500, old: 48500, badge: null, img: 'assets/img/products/imported/41.jpeg',
+    desc: 'A silver-tone diver-style watch with a blue dial and mesh bracelet.' },
+  { id: 42, name: 'Emporio Armani Diver Two-Tone Chronograph AR11362', brand: 'Emporio Armani', cat: 'men', price: 24500, old: 48500, badge: null, img: 'assets/img/products/imported/42.jpeg',
+    desc: 'A two-tone diver-style chronograph watch with a navy-blue dial.' },
+  { id: 43, name: 'Emporio Armani Men’s Watch AR2434', brand: 'Emporio Armani', cat: 'men', price: 21500, old: 38500, badge: null, img: 'assets/img/products/imported/43.jpeg',
+    desc: 'A polished Emporio Armani men’s watch with a versatile, contemporary style.' },
+  { id: 44, name: 'Emporio Armani Racer Green Dial Chronograph AR11637', brand: 'Emporio Armani', cat: 'men', price: 24500, old: 48500, badge: null, img: 'assets/img/products/imported/44.jpeg',
+    desc: 'A Racer-style chronograph with a green dial and sporty stainless-steel look.' },
+  { id: 45, name: 'Emporio Armani Silver Blue Dial Chronograph AR11676', brand: 'Emporio Armani', cat: 'men', price: 23500, old: 48500, badge: null, img: 'assets/img/products/imported/45.jpeg',
+    desc: 'A blue-dial chronograph-style watch with a silver stainless-steel finish.' },
+  { id: 46, name: 'Fossil Bannon Black Chronograph BQ2494', brand: 'Fossil', cat: 'men', price: 18500, old: 38500, badge: null, img: 'assets/img/products/imported/46.jpeg',
+    desc: 'A black Fossil Bannon watch with multifunction styling and a silicone strap.' },
+  { id: 47, name: 'Fossil Flynn Gold Chronograph BQ2823', brand: 'Fossil', cat: 'men', price: 16500, old: 28500, badge: null, img: 'assets/img/products/imported/47.jpeg',
+    desc: 'A gold-tone Fossil Flynn chronograph-style watch with a black leather strap.' },
+  { id: 48, name: 'Fossil Machine Brown Leather Chronograph FS4656', brand: 'Fossil', cat: 'men', price: 18500, old: 38500, badge: null, img: 'assets/img/products/imported/48.jpeg',
+    desc: 'A Fossil Machine chronograph-style watch with a brown leather strap and matching dial.' },
+  { id: 49, name: 'Fossil Ladies Silver Black Dial Watch FS6045', brand: 'Fossil', cat: 'women', price: 27500, old: 48500, badge: null, img: 'assets/img/products/imported/49.jpeg',
+    desc: 'A silver-tone Fossil ladies’ watch with a black dial and classic bracelet styling.' },
+  { id: 50, name: 'Cartier Men’s Watch', brand: 'Cartier', cat: 'men', price: 15000, old: 25500, badge: null, img: 'assets/img/products/imported/50.jpeg',
+    desc: 'A Cartier men’s watch with an elegant, versatile look for daily wear or special occasions.' },
+  { id: 51, name: 'Emporio Armani Men’s Watch AR80005', brand: 'Emporio Armani', cat: 'men', price: 12500, old: 24500, badge: null, img: 'assets/img/products/imported/51.jpeg',
+    desc: 'A modern Emporio Armani men’s watch with a clean, versatile design.' },
+  { id: 52, name: 'Emporio Armani Diver GMT Blue Dial AR11592', brand: 'Emporio Armani', cat: 'men', price: 28500, old: 47500, badge: null, img: 'assets/img/products/imported/52.jpeg',
+    desc: 'A blue-dial diver-style watch with a navy rubber strap and GMT-inspired design.' },
+  { id: 53, name: 'Emporio Armani Kappa Blue Leather Watch', brand: 'Emporio Armani', cat: 'men', price: 14500, old: 28500, badge: null, img: 'assets/img/products/imported/53.jpeg',
+    desc: 'An Emporio Armani Kappa watch featuring a blue leather strap and matching dial.' },
+  { id: 54, name: 'Emporio Armani Green Dial Watch AR80063', brand: 'Emporio Armani', cat: 'men', price: 23500, old: 38500, badge: null, img: 'assets/img/products/imported/54.jpeg',
+    desc: 'A two-tone stainless-steel watch with a green dial and contemporary styling.' },
+  { id: 55, name: 'Handmade Leather Watch Strap', brand: 'AI Collection', cat: 'accessories', price: 1150, old: 2500, badge: null, img: 'assets/img/products/imported/55.jpeg',
+    desc: 'A handmade leather watch strap with a classic finish to refresh the look of a compatible watch.' },
+  { id: 56, name: 'Ray-Ban Premium Sunglasses', brand: 'Ray-Ban', cat: 'accessories', price: null, old: null, badge: null, img: 'assets/img/products/imported/56-1.jpeg',
+    gallery: ['assets/img/products/imported/56-1.jpeg', 'assets/img/products/imported/56-2.jpeg', 'assets/img/products/imported/56-3.jpeg', 'assets/img/products/imported/56-4.jpeg', 'assets/img/products/imported/56-5.jpeg'],
+    desc: 'Premium sunglasses with UV400 protection and scratch-resistant lenses. The lightweight frame is suitable for men and women, for everyday use, travel and casual or formal outings.' },
 ];
 
 // Sample quantities for this static demo; replace with a shared inventory service before launch.
 const INVENTORY = {
-  1: 2, 2: 8, 3: 1, 4: 5, 5: 7, 6: 3, 7: 9, 8: 2, 9: 4, 10: 6,
-  11: 5, 12: 3, 13: 2, 14: 7, 15: 4, 16: 6, 17: 9, 18: 2, 19: 3, 20: 5,
+  24: 5, 25: 5, 26: 5, 27: 5, 28: 5,
+  29: 5, 30: 5, 31: 5, 32: 5, 33: 5, 34: 5, 35: 5, 36: 5, 37: 5,
+  38: 5, 39: 5, 40: 5, 41: 5, 42: 5, 43: 5, 44: 5, 45: 5, 46: 5,
+  47: 5, 48: 5, 49: 5, 50: 5, 51: 5, 52: 5, 53: 5, 54: 5, 55: 5,
 };
 const COUPONS = {
   TIME10: { type: 'percent', value: 10, minimum: 0 },
@@ -90,6 +99,7 @@ const COUPONS = {
 
 const BRAND_INFO = {
   'Rolex':        'The crown of horology — icons of prestige since 1905.',
+  'CK':           'Contemporary fashion watches with a clean, modern look.',
   'Casio':        'Innovation and toughness, from G-Shock to Edifice.',
   'Seiko':        'Japanese mastery — automatic movements since 1881.',
   'Fossil':       'Accessible American design with vintage inspiration.',
@@ -99,6 +109,22 @@ const BRAND_INFO = {
   'Michael Kors': 'Jet-set glamour and statement style.',
   'Anne Klein':   'Timeless, wearable elegance for every occasion.',
   'Coach':        'Modern sophistication with New York heritage.',
+  'Diesel':       'Bold, statement-making watches with a distinctive style.',
+  'Emporio Armani': 'Modern Italian-inspired style for everyday accessories.',
+  'Patek Philippe': 'Refined designs with a timeless luxury aesthetic.',
+  'Cartier':      'Elegant watch designs with a distinctive, polished look.',
+};
+const BRAND_WORDMARK_CLASSES = {
+  Rolex: 'wm-rolex',
+  Casio: 'wm-casio',
+  Seiko: 'wm-seiko',
+  Fossil: 'wm-fossil',
+  Tissot: 'wm-tissot',
+  Omega: 'wm-omega',
+  Rado: 'wm-rado',
+  'Michael Kors': 'wm-mk',
+  'Anne Klein': 'wm-anneklein',
+  Coach: 'wm-coach',
 };
 
 /* ---------- helpers ---------- */
@@ -142,7 +168,7 @@ function renderCompareDock() {
   if (!dock || !count) return;
   const total = compareList().length;
   dock.hidden = total === 0;
-  count.textContent = `${total} watch${total === 1 ? '' : 'es'} selected`;
+  count.textContent = `${total} product${total === 1 ? '' : 's'} selected`;
 }
 function renderCompareTable() {
   const content = document.getElementById('compare-content');
@@ -153,11 +179,11 @@ function renderCompareTable() {
       <thead><tr><th>Details</th>${products.map(p => `<th><button type="button" class="compare-remove" data-compare-remove="${p.id}" aria-label="Remove ${escapeHtml(p.name)}">&times;</button><img src="${p.img}" alt="${escapeHtml(p.name)}"><a href="#/product?id=${p.id}">${escapeHtml(p.name)}</a></th>`).join('')}</tr></thead>
       <tbody>
         <tr><th>Brand</th>${products.map(p => `<td>${escapeHtml(p.brand)}</td>`).join('')}</tr>
-        <tr><th>Price</th>${products.map(p => `<td>${formatPrice(p.price)}</td>`).join('')}</tr>
+        <tr><th>Price</th>${products.map(p => `<td>${p.price === null ? 'Contact for price' : formatPrice(p.price)}</td>`).join('')}</tr>
         <tr><th>Category</th>${products.map(p => `<td>${escapeHtml(CAT_NAME[p.cat])}</td>`).join('')}</tr>
-        <tr><th>Availability</th>${products.map(p => `<td>${getStock(p.id) ? `In stock (${getStock(p.id)})` : 'Out of stock'}</td>`).join('')}</tr>
+        <tr><th>Availability</th>${products.map(p => `<td>${p.price === null ? 'Contact to confirm' : getStock(p.id) ? `In stock (${getStock(p.id)})` : 'Out of stock'}</td>`).join('')}</tr>
       </tbody>
-    </table></div>` : '<p class="compare-empty">Select watches from the catalog to compare them here.</p>';
+    </table></div>` : '<p class="compare-empty">Select products from the catalog to compare them here.</p>';
 }
 function bindSearchSuggestions() {
   const input = document.querySelector('#header-search input');
@@ -227,7 +253,7 @@ function badgeClass(p) {
   if (b === 'Hot') return 'b-hot';
   return 'b-sale';
 }
-const CAT_NAME = { men: "Men's Watches", women: "Women's Watches", luxury: 'Luxury Watches' };
+const CAT_NAME = { men: "Men's Collection", women: "Women's Collection", luxury: 'Luxury Collection', accessories: 'Accessories', electronics: 'Electronics' };
 
   
 
@@ -305,18 +331,19 @@ let PAGE = document.body.dataset.page || 'home';
 const NAV = [
   { label: 'Home', href: '#/home', page: 'home' },
   { label: "Men's Watches", href: '#/mens', page: 'mens', dd: [
-    ['Casual Watches', '#/mens?style=Casual', ASSETS['assets/img/products/p5.png']],
-    ['Sports Watches', '#/mens?style=Sports', ASSETS['assets/img/products/p7.png']],
-    ['Digital Watches', '#/mens?style=Digital', ASSETS['assets/img/products/p17.png']],
-    ['Formal Watches', '#/mens?style=Formal', ASSETS['assets/img/products/p11.png']],
+    ['Automatic Watches', '#/mens?style=Automatic', 'assets/img/products/imported/30.jpeg'],
+    ['Chronograph Watches', '#/mens?style=Chronograph', 'assets/img/products/imported/34.jpeg'],
+    ['Leather Strap Watches', '#/mens?style=Leather Strap', 'assets/img/products/imported/39.jpeg'],
+    ['New Arrivals', '#/mens?style=New Arrival', 'assets/img/products/imported/35.jpeg'],
   ]},
   { label: "Women's Watches", href: '#/womens', page: 'womens', dd: [
-    ['Luxury Watches', '#/womens?style=Luxury', ASSETS['assets/img/products/p13.png']],
-    ['Fashion Watches', '#/womens?style=Fashion', ASSETS['assets/img/products/p16.png']],
-    ['Classic Watches', '#/womens?style=Classic', ASSETS['assets/img/products/p15.png']],
-    ['Bracelet Watches', '#/womens?style=Bracelet', ASSETS['assets/img/products/p18.png']],
+    ['Ladies Watches', '#/womens?style=Ladies', 'assets/img/products/imported/24.jpeg'],
+    ['Analogue Watches', '#/womens?style=Analogue', 'assets/img/products/imported/26.jpeg'],
+    ['Dress Watches', '#/womens?style=Dress', 'assets/img/products/imported/27.jpeg'],
+    ['Chronograph Watches', '#/womens?style=Chronograph', 'assets/img/products/imported/49.jpeg'],
   ]},
   { label: 'Luxury Watches', href: '#/luxury', page: 'luxury' },
+  { label: 'Collections', href: 'ladies-watches.html', page: 'collections', ddCategories: true },
   { label: 'Brands', href: '#/brands', page: 'brands', ddBrands: true },
   { label: 'Sale', href: '#/sale', page: 'sale' },
   { label: 'Contact Us', href: '#/contact', page: 'contact' },
@@ -334,7 +361,14 @@ function buildHeader() {
       const bl = ['Rolex', 'Fossil', 'Casio', 'Tissot', 'Seiko', 'Omega'];
       return `<li><a href="#/brands" class="nav-link${active}">${n.label} ${ICONS.caretNav}</a>
         <div class="dropdown"><div class="dd-brands">${bl.map(b =>
-          `<a href="#/search?brand=${encodeURIComponent(b)}">${b.toUpperCase()}</a>`).join('')}</div></div></li>`;
+          `<a href="#/search?brand=${encodeURIComponent(b)}">${b.toUpperCase()}</a>`).join('')}
+          <a class="dd-more" href="#/brands">More Brands ${ICONS.arrowR}</a>
+        </div></div></li>`;
+    }
+    if (n.ddCategories) {
+      return `<li><a href="${n.href}" class="nav-link${active}">${n.label} ${ICONS.caretNav}</a>
+        <div class="dropdown"><div class="dd-categories">${STORE_CATEGORIES.map(category =>
+          `<a href="${category.file}">${category.label}</a>`).join('')}</div></div></li>`;
     }
     return `<li><a href="${n.href}" class="nav-link${active}">${n.label}</a></li>`;
   }).join('');
@@ -348,12 +382,12 @@ function buildHeader() {
     <span class="topbar-item">${ICONS.headset} 24/7 Customer Support</span>
   </div></div>
   <header class="site-header"><div class="container header-in">
-    <a class="logo" href="#/home" aria-label="Watch Store — Time In Style">
-      <img src="${ASSETS['assets/img/logo.png']}" alt="Watch Store — Time In Style">
+    <a class="logo" href="#/home" aria-label="AI Collection">
+      <img src="${ASSETS['assets/img/logo.png']}" alt="AI Collection">
     </a>
     <form class="search-form" id="header-search" action="#/search" method="get">
       <span class="search-leading" aria-hidden="true">${ICONS.search}</span>
-      <input type="text" name="q" placeholder="Search for watches..." aria-label="Search for watches">
+      <input type="text" name="q" placeholder="Search products..." aria-label="Search products">
       <button class="search-btn" type="submit" aria-label="Search">${ICONS.search}</button>
     </form>
     <div class="header-actions">
@@ -377,12 +411,14 @@ function buildHeader() {
   <div class="drawer-overlay" id="drawer-overlay"></div>
   <aside class="drawer" id="drawer">
     <div class="drawer-head">
-      <img src="${ASSETS['assets/img/logo.png']}" alt="Watch Store">
+      <img src="${ASSETS['assets/img/logo.png']}" alt="AI Collection">
       <button class="drawer-close" id="drawer-close" aria-label="Close menu">&times;</button>
     </div>
     <nav>
       ${NAV.map(n => `<a href="${n.href}" class="${n.page === PAGE ? 'active' : ''}">${n.label}</a>`).join('')}
       <div class="drawer-sub">
+        <strong>Shop by category</strong>
+        ${STORE_CATEGORIES.map(category => `<a href="${category.file}">${category.label}</a>`).join('')}
         <a href="#/cart">Cart</a><a href="#/wishlist">Wishlist</a><a href="#/account">Account</a>
         <a href="#/track-order">Track Order</a><a href="#/shipping">Shipping &amp; Returns</a><a href="#/faqs">FAQ</a>
       </div>
@@ -399,8 +435,8 @@ function buildFooter() {
   return `
   <footer class="site-footer"><div class="container footer-in">
     <div class="f-brand">
-      <a href="#/home"><img src="${ASSETS['assets/img/logo.png']}" alt="Watch Store — Time In Style"></a>
-      <p>Your one-stop shop for premium watches. Quality. Style. Trust.</p>
+      <a href="#/home"><img src="${ASSETS['assets/img/logo.png']}" alt="AI Collection"></a>
+      <p>Your one-stop shop for premium products, smart essentials and everyday style.</p>
       ${socRow('f-socials')}
     </div>
     <div class="footer-link-columns">
@@ -408,9 +444,9 @@ function buildFooter() {
       <h4>Quick Links</h4>
       <ul class="f-links">
         <li><a href="#/home">Home</a></li>
-        <li><a href="#/mens">Men's Watches</a></li>
-        <li><a href="#/womens">Women's Watches</a></li>
-        <li><a href="#/luxury">Luxury Watches</a></li>
+        <li><a href="#/mens">Men's Collection</a></li>
+        <li><a href="#/womens">Women's Collection</a></li>
+        <li><a href="#/luxury">Luxury Collection</a></li>
         <li><a href="#/sale">Sale</a></li>
         <li><a href="#/contact">Contact Us</a></li>
         <li><a href="#/track-order">Track Order</a></li>
@@ -437,7 +473,7 @@ function buildFooter() {
     </div>
   </div>
   <div class="copy-bar"><div class="container copy-in">
-    <span>© ${year} Watch Store. All Rights Reserved.</span>
+    <span>© ${year} AI Collection. All Rights Reserved.</span>
     <span class="follow">Follow Us: ${socRow('f-socials')}</span>
   </div></div></footer>
   <nav class="mobile-bottom-nav" aria-label="Mobile navigation">
@@ -456,7 +492,7 @@ function buildFooter() {
     <button class="compare-clear" type="button" id="compare-clear">Clear</button>
   </div>
   <dialog class="compare-dialog" id="compare-dialog" aria-labelledby="compare-title">
-    <div class="compare-dialog-head"><h2 id="compare-title">Compare Watches</h2><button type="button" id="compare-close" aria-label="Close comparison">&times;</button></div>
+    <div class="compare-dialog-head"><h2 id="compare-title">Compare Products</h2><button type="button" id="compare-close" aria-label="Close comparison">&times;</button></div>
     <div id="compare-content"></div>
   </dialog>`;
 }
@@ -559,7 +595,16 @@ window.WSLayoutInit = () => {
 };
 
 /* ---------- shared helpers ---------- */
-function cartItems() { return JSON.parse(localStorage.getItem('ws_cart') || '[]'); }
+function cartItems() {
+  const items = JSON.parse(localStorage.getItem('ws_cart') || '[]');
+  const currentItems = items.filter(item =>
+    item && getProduct(item.id) && Number.isInteger(Number(item.qty)) && Number(item.qty) > 0
+  );
+  if (currentItems.length !== items.length) {
+    localStorage.setItem('ws_cart', JSON.stringify(currentItems));
+  }
+  return currentItems;
+}
 function saveCart(items) {
   localStorage.setItem('ws_cart', JSON.stringify(items));
   updateCartBadge();
@@ -575,7 +620,10 @@ function updateCartBadge() {
   const mobileCount = document.getElementById('mobile-cart-count');
   if (mobileCount) mobileCount.textContent = n;
 }
-function wishlistItems() { return JSON.parse(localStorage.getItem('ws_wishlist') || '[]'); }
+function wishlistItems() {
+  return JSON.parse(localStorage.getItem('ws_wishlist') || '[]')
+    .map(Number).filter((id, index, list) => getProduct(id) && list.indexOf(id) === index);
+}
 function updateWishlistBadge() {
   const el = document.getElementById('wishlist-count');
   if (el) {
@@ -593,6 +641,11 @@ function toggleWish(id) {
   return !has;
 }
 function addToCart(id, qty = 1, silent = false) {
+  const product = getProduct(id);
+  if (product && product.price === null) {
+    toast('Please contact us to ask for this product’s price.');
+    return;
+  }
   const stock = getStock(id);
   if (!stock) {
     toast('This watch is currently out of stock.');
@@ -624,23 +677,27 @@ function productCard(p) {
   const wished = wishlistItems().includes(p.id);
   const compared = compareList().includes(p.id);
   const stock = getStock(p.id);
+  const priceMarkup = p.price === null
+    ? '<span class="now">Contact for price</span>'
+    : `<span class="now">${formatPrice(p.price)}</span>${p.old ? `<span class="old">${formatPrice(p.old)}</span>` : ''}`;
   return `
   <article class="p-card reveal">
     <div class="p-thumb">
       ${b ? `<span class="p-badge ${badgeClass(p)}">${b}</span>` : ''}
       <button class="wish-btn${wished ? ' active' : ''}" data-wish="${p.id}" aria-label="Add to wishlist">${ICONS.heart}</button>
       <a href="#/product?id=${p.id}"><img src="${p.img}" alt="${p.name}" loading="lazy"></a>
-      <button class="add-btn" data-add="${p.id}"${stock ? '' : ' disabled'}>${ICONS.bag} ${stock ? 'Add To Cart' : 'Out of Stock'}</button>
+      ${p.price === null
+        ? `<a class="add-btn" href="https://wa.me/923006693524?text=${encodeURIComponent('Hi, please share the price for ' + p.name + '.')}" target="_blank" rel="noopener noreferrer">${ICONS.phone} Ask for Price</a>`
+        : `<button class="add-btn" data-add="${p.id}"${stock ? '' : ' disabled'}>${ICONS.bag} ${stock ? 'Add To Cart' : 'Out of Stock'}</button>`}
     </div>
     <div class="p-body">
       <span class="p-brand">${p.brand}</span>
       <h3 class="p-name"><a href="#/product?id=${p.id}">${p.name}</a></h3>
       <div class="p-price">
-        <span class="now">${formatPrice(p.price)}</span>
-        ${p.old ? `<span class="old">${formatPrice(p.old)}</span>` : ''}
+        ${priceMarkup}
       </div>
       <div class="p-card-tools">
-        <span class="stock-label${stock <= 2 ? ' low' : ''}">${stock === 0 ? 'Out of stock' : stock <= 2 ? `Only ${stock} left` : 'In stock'}</span>
+        <span class="stock-label${p.price !== null && stock <= 2 ? ' low' : ''}">${p.price === null ? 'Price on request' : stock === 0 ? 'Out of stock' : stock <= 2 ? `Only ${stock} left` : 'In stock'}</span>
         <button class="compare-toggle${compared ? ' active' : ''}" type="button" data-compare="${p.id}" aria-pressed="${compared}">Compare</button>
       </div>
     </div>
@@ -687,12 +744,52 @@ function qs(name) {
 
 /* style tags used by the nav dropdown filters */
 const TAGS = {
-  1: ['Sports', 'Formal'], 2: ['Casual', 'Formal'], 4: ['Sports', 'Formal'],
-  5: ['Casual', 'Formal'], 7: ['Sports', 'Digital'], 11: ['Casual', 'Formal'],
-  12: ['Casual', 'Sports'], 20: ['Sports'],
-  13: ['Luxury', 'Fashion'], 14: ['Fashion', 'Classic'], 15: ['Classic', 'Bracelet'],
-  16: ['Fashion'], 17: ['Fashion', 'Digital'], 18: ['Bracelet', 'Fashion'],
+  24: ['Ladies', 'Analogue', 'Dress'],
+  25: ['Ladies', 'Analogue', 'Dress'],
+  26: ['Ladies', 'Analogue', 'Dress'],
+  27: ['Ladies', 'Analogue', 'Dress'],
+  28: ['Ladies', 'Analogue', 'Dress'],
+  29: ['Automatic'],
+  30: ['Automatic'],
+  31: ['Automatic'],
+  32: ['Automatic'],
+  33: ['Automatic'],
+  34: ['Automatic', 'Chronograph'],
+  35: ['Automatic', 'New Arrival'],
+  36: ['Automatic'],
+  37: ['Automatic'],
+  38: ['Chronograph', 'New Arrival'],
+  39: ['Chronograph', 'New Arrival', 'Leather Strap'],
+  40: ['Chronograph', 'New Arrival', 'Leather Strap'],
+  41: ['Chronograph', 'New Arrival'],
+  42: ['Chronograph', 'New Arrival'],
+  43: ['Chronograph', 'New Arrival'],
+  44: ['Chronograph', 'New Arrival'],
+  45: ['Chronograph'],
+  46: ['Chronograph'],
+  47: ['Chronograph', 'Leather Strap'],
+  48: ['Chronograph', 'Leather Strap'],
+  49: ['Ladies', 'Chronograph'],
+  50: ['New Arrival'],
+  51: ['New Arrival'],
+  52: ['New Arrival'],
+  53: ['New Arrival', 'Leather Strap'],
+  54: ['New Arrival'],
+  55: ['Leather Strap'],
+  56: ['Sunglasses'],
 };
+
+const STORE_CATEGORIES = [
+  { page: 'ladies-watches', label: 'Ladies Watches', file: 'ladies-watches.html', tag: 'Ladies' },
+  { page: 'analogue-watch', label: 'Analogue Watches', file: 'analogue-watch.html', tag: 'Analogue' },
+  { page: 'automatic-watch', label: 'Automatic Watches', file: 'automatic-watch.html', tag: 'Automatic' },
+  { page: 'chronographs-watches', label: 'Chronograph Watches', file: 'chronographs-watches.html', tag: 'Chronograph' },
+  { page: 'dress-watches', label: 'Dress Watches', file: 'dress-watches.html', tag: 'Dress' },
+  { page: 'smart-watch', label: 'Smart Watches', file: 'smart-watch.html', tag: 'Smart Watch' },
+  { page: 'sun-glasses', label: 'Sunglasses', file: 'sun-glasses.html', tag: 'Sunglasses' },
+  { page: 'new-arrival', label: 'New Arrivals', file: 'new-arrival.html', tag: 'New Arrival' },
+  { page: 'leather-straps', label: 'Leather Straps', file: 'leather-straps.html', tag: 'Leather Strap' },
+];
 
 window.WSPageInit = () => {
 
@@ -728,16 +825,33 @@ window.WSPageInit = () => {
   /* ================= HOME ================= */
   if (PAGE === 'home') {
     renderProducts(PRODUCTS.slice(0, 8), document.getElementById('featured-grid'));
+    const brandLogos = document.getElementById('home-brand-logos');
+    const brandNames = [...new Set(PRODUCTS.map(product => product.brand).filter(brand => brand !== 'AI Collection'))];
+    brandLogos.innerHTML = `
+      <div class="brand-track">
+        <div class="brand-group" role="list">
+          ${brandNames.map(brand => `<a class="wordmark ${BRAND_WORDMARK_CLASSES[brand] || 'wm-default'}" href="search.html?brand=${encodeURIComponent(brand)}" aria-label="Shop ${brand} products" role="listitem">${brand}</a>`).join('')}
+        </div>
+      </div>`;
+    renderProducts(
+      PRODUCTS.filter(product =>
+        (product.cat === 'accessories' || product.cat === 'electronics') &&
+        product.img.startsWith('assets/img/products/imported/')
+      ),
+      document.getElementById('home-other-products-grid')
+    );
     bindNewsletter();
   }
 
   /* ================= SHOP PAGES ================= */
-  if (['mens', 'womens', 'luxury', 'sale'].includes(PAGE)) {
+  const categoryPage = STORE_CATEGORIES.find(category => category.page === PAGE);
+  if (['mens', 'womens', 'luxury', 'sale'].includes(PAGE) || categoryPage) {
     const base =
       PAGE === 'mens'   ? PRODUCTS.filter(p => p.cat === 'men') :
       PAGE === 'womens' ? PRODUCTS.filter(p => p.cat === 'women') :
-      PAGE === 'luxury' ? PRODUCTS.filter(p => p.cat === 'luxury') :
-                          PRODUCTS.filter(p => p.old);
+      PAGE === 'luxury' ? PRODUCTS.filter(p => ['Omega', 'Patek Philippe', 'Cartier'].includes(p.brand)) :
+      PAGE === 'sale'   ? PRODUCTS.filter(p => p.old) :
+                          PRODUCTS.filter(p => (TAGS[p.id] || []).includes(categoryPage.tag));
     let state = {
       brand: qs('brand') || null,
       style: qs('style') || null,
@@ -808,7 +922,7 @@ window.WSPageInit = () => {
         state.onSale && PAGE !== 'sale' ? `Discounted only` : null,
       ].filter(Boolean).join(' &nbsp;·&nbsp; ');
       toolbar.innerHTML = `
-        <div class="res">Showing <b>${list.length}</b> of ${base.length} watches ${chips ? '— ' + chips : ''}</div>
+        <div class="res">Showing <b>${list.length}</b> of ${base.length} products ${chips ? '— ' + chips : ''}</div>
         <div class="sort-box">Sort by
           <select id="sort-sel">
             <option value="featured">Featured</option>
@@ -821,7 +935,7 @@ window.WSPageInit = () => {
       toolbar.querySelector('#sort-sel').value = state.sort;
       toolbar.querySelector('#sort-sel').addEventListener('change', e => { state.sort = e.target.value; apply(); });
       if (list.length) renderProducts(list, grid);
-      else grid.innerHTML = `<div class="empty-state" style="grid-column:1/-1">${ICONS.search}<h3>No watches found</h3><p>Try removing some filters to see more results.</p><a class="btn" href="${location.pathname}">Reset Filters</a></div>`;
+      else grid.innerHTML = `<div class="empty-state" style="grid-column:1/-1">${ICONS.search}<h3>No products found</h3><p>Try removing some filters or check back soon for new arrivals.</p><a class="btn" href="${location.pathname}">Reset Filters</a></div>`;
       revealInit(grid);
     };
 
@@ -853,13 +967,14 @@ window.WSPageInit = () => {
     const p = getProduct(qs('id'));
     const wrap = document.getElementById('pd-root');
     if (!p) {
-      wrap.innerHTML = `<div class="empty-state">${ICONS.search}<h3>Watch not found</h3><p>The product you are looking for does not exist or was removed.</p><a class="btn" href="#/home">Back to Home</a></div>`;
+      wrap.innerHTML = `<div class="empty-state">${ICONS.search}<h3>Product not found</h3><p>The product you are looking for does not exist or was removed.</p><a class="btn" href="#/home">Back to Home</a></div>`;
       return;
     }
-    document.title = `${p.name} | Watch Store`;
+    document.title = `${p.name} | AI Collection`;
     const b = badgeLabel(p);
     const wished = wishlistItems().includes(p.id);
     const stock = getStock(p.id);
+    const gallery = p.gallery || [p.img];
     const recent = JSON.parse(localStorage.getItem('ws_recently_viewed') || '[]')
       .map(Number).filter(id => id !== p.id && getProduct(id));
     const recentIds = [p.id, ...recent].filter((id, index, list) => list.indexOf(id) === index).slice(0, 7);
@@ -868,29 +983,35 @@ window.WSPageInit = () => {
       <div class="pd-wrap">
         <div class="pd-gallery reveal">
           ${b ? `<span class="p-badge ${badgeClass(p)}">${b}</span>` : ''}
-          <img src="${p.img}" alt="${p.name}">
+          <img id="pd-main-image" src="${p.img}" alt="${escapeHtml(p.name)}">
+          ${gallery.length > 1 ? `<div class="pd-thumbnails">${gallery.map((image, index) =>
+            `<button type="button" class="${index === 0 ? 'active' : ''}" data-gallery-image="${escapeHtml(image)}" aria-label="View product image ${index + 1}">
+              <img src="${escapeHtml(image)}" alt="${escapeHtml(p.name)} view ${index + 1}" loading="lazy">
+            </button>`).join('')}</div>` : ''}
         </div>
         <div class="pd-info">
           <span class="pd-brand">${p.brand}</span>
           <h2>${p.name}</h2>
           <div class="pd-price-row">
-            <span class="now">${formatPrice(p.price)}</span>
+            <span class="now">${p.price === null ? 'Contact for price' : formatPrice(p.price)}</span>
             ${p.old ? `<span class="old">${formatPrice(p.old)}</span><span class="save-pill">Save ${discountPct(p)}%</span>` : ''}
           </div>
           <p class="pd-desc">${p.desc}</p>
           <div class="pd-meta">
             <div><b>Category:</b> ${CAT_NAME[p.cat]}</div>
             <div><b>Brand:</b> ${p.brand}</div>
-            <div><b>Availability:</b> <span class="${stock <= 2 ? 'stock-low' : 'in-stock'}">${stock === 0 ? 'Out of Stock' : stock <= 2 ? `Only ${stock} left` : '✓ In Stock'}</span> — ${stock ? 'ready to ship' : 'currently unavailable'}</div>
+            <div><b>Availability:</b> <span class="${p.price === null ? '' : stock <= 2 ? 'stock-low' : 'in-stock'}">${p.price === null ? 'Price on request' : stock === 0 ? 'Out of Stock' : stock <= 2 ? `Only ${stock} left` : '✓ In Stock'}</span> — ${p.price === null ? 'contact us to confirm price and availability' : stock ? 'ready to ship' : 'currently unavailable'}</div>
           </div>
           <div class="buy-row">
-            <div class="qty">
-              <button type="button" id="q-minus">−</button>
-              <input type="text" id="q-input" value="1" readonly aria-label="Quantity">
-              <button type="button" id="q-plus"${stock <= 1 ? ' disabled' : ''}>+</button>
-            </div>
-            <button class="btn" id="pd-add"${stock ? '' : ' disabled'}>${ICONS.cart} Add To Cart</button>
-            <button class="btn btn-dark" id="pd-buy"${stock ? '' : ' disabled'}>Buy Now</button>
+            ${p.price === null
+              ? `<a class="btn" href="https://wa.me/923006693524?text=${encodeURIComponent('Hi, please share the price for ' + p.name + '.')}" target="_blank" rel="noopener noreferrer">Ask for Price</a>`
+              : `<div class="qty">
+                  <button type="button" id="q-minus">−</button>
+                  <input type="text" id="q-input" value="1" readonly aria-label="Quantity">
+                  <button type="button" id="q-plus"${stock <= 1 ? ' disabled' : ''}>+</button>
+                </div>
+                <button class="btn" id="pd-add"${stock ? '' : ' disabled'}>${ICONS.cart} Add To Cart</button>
+                <button class="btn btn-dark" id="pd-buy"${stock ? '' : ' disabled'}>Buy Now</button>`}
             <button class="wish-lg${wished ? ' active' : ''}" id="pd-wish" aria-label="Wishlist">${ICONS.heart}</button>
             <button class="btn-outline pd-compare${compareList().includes(p.id) ? ' active' : ''}" id="pd-compare" data-compare="${p.id}" type="button" aria-pressed="${compareList().includes(p.id)}">Compare</button>
           </div>
@@ -899,11 +1020,11 @@ window.WSPageInit = () => {
             <div>${ICONS.shield}100% original &amp; authentic</div>
             <div>${ICONS.refresh}7-day easy returns</div>
           </div>
-          <ul class="pd-feats">
+          ${p.cat === 'accessories' ? '' : `<ul class="pd-feats">
             <li>${ICONS.check} Premium gift box &amp; original documentation included</li>
             <li>${ICONS.check} 1-year official store warranty on all watches</li>
             <li>${ICONS.check} Cash on delivery available nationwide</li>
-          </ul>
+          </ul>`}
         </div>
       </div>
       <section class="product-reviews" id="pd-reviews" aria-labelledby="reviews-title">
@@ -921,21 +1042,29 @@ window.WSPageInit = () => {
           <button class="btn" type="submit">Submit Review</button>
         </form>
       </section>`;
-    let qty = 1;
-    wrap.querySelector('#q-plus').onclick = () => {
-      qty = Math.min(9, stock, qty + 1);
-      wrap.querySelector('#q-input').value = qty;
-      wrap.querySelector('#q-plus').disabled = qty >= stock;
-      wrap.querySelector('#q-minus').disabled = qty <= 1;
-    };
-    wrap.querySelector('#q-minus').onclick = () => {
-      qty = Math.max(1, qty - 1);
-      wrap.querySelector('#q-input').value = qty;
-      wrap.querySelector('#q-minus').disabled = qty <= 1;
-      wrap.querySelector('#q-plus').disabled = qty >= stock;
-    };
-    wrap.querySelector('#pd-add').onclick = () => addToCart(p.id, qty);
-    wrap.querySelector('#pd-buy').onclick = () => { addToCart(p.id, qty, true); location.href = '#/checkout'; };
+    wrap.querySelectorAll('[data-gallery-image]').forEach(button => {
+      button.addEventListener('click', () => {
+        wrap.querySelector('#pd-main-image').src = button.dataset.galleryImage;
+        wrap.querySelectorAll('[data-gallery-image]').forEach(item => item.classList.toggle('active', item === button));
+      });
+    });
+    if (p.price !== null) {
+      let qty = 1;
+      wrap.querySelector('#q-plus').onclick = () => {
+        qty = Math.min(9, stock, qty + 1);
+        wrap.querySelector('#q-input').value = qty;
+        wrap.querySelector('#q-plus').disabled = qty >= stock;
+        wrap.querySelector('#q-minus').disabled = qty <= 1;
+      };
+      wrap.querySelector('#q-minus').onclick = () => {
+        qty = Math.max(1, qty - 1);
+        wrap.querySelector('#q-input').value = qty;
+        wrap.querySelector('#q-minus').disabled = qty <= 1;
+        wrap.querySelector('#q-plus').disabled = qty >= stock;
+      };
+      wrap.querySelector('#pd-add').onclick = () => addToCart(p.id, qty);
+      wrap.querySelector('#pd-buy').onclick = () => { addToCart(p.id, qty, true); location.href = '#/checkout'; };
+    }
     wrap.querySelector('#pd-wish').onclick = e => {
       const on = toggleWish(p.id);
       e.currentTarget.classList.toggle('active', on);
@@ -981,7 +1110,7 @@ window.WSPageInit = () => {
     if (crumb) crumb.textContent = p.name;
     const catLink = document.getElementById('pd-cat-link');
     if (catLink) {
-      catLink.href = p.cat === 'men' ? '#/mens' : p.cat === 'women' ? '#/womens' : '#/luxury';
+      catLink.href = p.cat === 'men' ? '#/mens' : p.cat === 'women' ? '#/womens' : p.cat === 'luxury' ? '#/luxury' : TAGS[p.id]?.includes('Sunglasses') ? 'sun-glasses.html' : TAGS[p.id]?.includes('Leather Strap') ? 'leather-straps.html' : 'index.html';
       catLink.textContent = CAT_NAME[p.cat];
     }
   }
@@ -1450,7 +1579,7 @@ window.WSPageInit = () => {
         const url = new URL(location.href);
         url.search = '';
         url.searchParams.set('ids', ids.join(','));
-        const shareData = { title: 'My Watch Store wishlist', text: 'Take a look at these watches I saved:', url: url.href };
+        const shareData = { title: 'My AI Collection wishlist', text: 'Take a look at the products I saved:', url: url.href };
         if (typeof navigator.share === 'function') {
           try {
             await navigator.share(shareData);
@@ -1482,9 +1611,14 @@ window.WSPageInit = () => {
   if (PAGE === 'search') {
     const q = (qs('q') || '').trim();
     const requestedBrand = qs('brand') || '';
+    const watchesOnly = qs('type') === 'watches';
     const box = document.getElementById('search-meta');
-    if (requestedBrand && !q) {
-      box.innerHTML = `Showing all watches by <b>${escapeHtml(requestedBrand)}</b>`;
+    if (watchesOnly && !q && !requestedBrand) {
+      box.innerHTML = 'Browse all watches in our collection.';
+      const st = document.querySelector('.page-hero h1');
+      if (st) st.innerHTML = 'All <em>Watches</em>';
+    } else if (requestedBrand && !q) {
+      box.innerHTML = `Showing all products by <b>${escapeHtml(requestedBrand)}</b>`;
       const st = document.querySelector('.page-hero h1');
       if (st) st.innerHTML = `${escapeHtml(requestedBrand)} <em>Collection</em>`;
       const input = document.querySelector('#header-search input');
@@ -1504,6 +1638,7 @@ window.WSPageInit = () => {
     const applySearch = () => {
       const keyword = q.toLowerCase();
       let list = PRODUCTS.filter(p =>
+        (!watchesOnly || (p.cat !== 'accessories' && p.cat !== 'electronics')) &&
         (!keyword || `${p.name} ${p.brand} ${p.desc}`.toLowerCase().includes(keyword)) &&
         (!document.getElementById('search-brand').value || p.brand === document.getElementById('search-brand').value) &&
         (!document.getElementById('search-category').value || p.cat === document.getElementById('search-category').value));
@@ -1513,9 +1648,9 @@ window.WSPageInit = () => {
       if (sort === 'name') list.sort((a, b) => a.name.localeCompare(b.name));
       box.innerHTML = q
         ? `Found <b>${list.length}</b> result${list.length !== 1 ? 's' : ''} for “<b>${escapeHtml(q)}</b>”`
-        : `Showing <b>${list.length}</b> watches${brandSelect.value ? ` by <b>${escapeHtml(brandSelect.value)}</b>` : ''}`;
+        : `Showing <b>${list.length}</b> product${list.length !== 1 ? 's' : ''}${brandSelect.value ? ` by <b>${escapeHtml(brandSelect.value)}</b>` : ''}`;
       if (list.length) renderProducts(list, grid);
-      else grid.innerHTML = `<div class="empty-state" style="grid-column:1/-1">${ICONS.search}<h3>No matches found</h3><p>Try changing your keyword or filters.</p><a class="btn" href="#/home">Browse All Watches</a></div>`;
+      else grid.innerHTML = `<div class="empty-state" style="grid-column:1/-1">${ICONS.search}<h3>No matches found</h3><p>Try changing your keyword or filters.</p><a class="btn" href="index.html">Browse All Products</a></div>`;
     };
     document.getElementById('search-filters').addEventListener('change', applySearch);
     applySearch();

@@ -231,6 +231,17 @@ input, select, textarea { font-family: inherit; font-size: 14px; }
   font-weight: 700; color: #22201a; font-size: 13px; letter-spacing: 1.5px;
 }
 .dd-brands a:hover { background: var(--cream); color: var(--gold-deep); }
+.dd-brands .dd-more {
+  grid-column: 1 / -1; display: flex; align-items: center; justify-content: center;
+  gap: 7px; color: var(--gold-deep); font-size: 12px; letter-spacing: .8px;
+}
+.dd-brands .dd-more svg { width: 15px; height: 15px; }
+.dd-categories { display: grid; grid-template-columns: repeat(2, minmax(150px, 1fr)); gap: 4px; min-width: 360px; }
+.dd-categories a {
+  padding: 11px 12px; border-radius: 8px; color: var(--ink);
+  font-size: 13px; font-weight: 500; white-space: nowrap;
+}
+.dd-categories a:hover { background: var(--cream); color: var(--gold-deep); }
 
 /* Hamburger + mobile drawer */
 .hamburger { display: none; flex-direction: column; gap: 5px; padding: 8px; }
@@ -248,6 +259,10 @@ input, select, textarea { font-family: inherit; font-size: 14px; }
 .drawer.open { right: 0; }
 .drawer-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 18px; }
 .drawer-head img { height: 52px; }
+.drawer-sub strong {
+  display: block; padding: 12px 0 6px; color: var(--gold-soft);
+  font-size: 12px; letter-spacing: 1px; text-transform: uppercase;
+}
 .drawer-close { color: var(--gold); font-size: 26px; line-height: 1; }
 .drawer nav a {
   display: block; padding: 13px 6px; color: rgba(255, 255, 255, .9);
@@ -320,23 +335,20 @@ input, select, textarea { font-family: inherit; font-size: 14px; }
   background: linear-gradient(90deg, transparent, var(--gold));
 }
 .strip-title::after { background: linear-gradient(90deg, var(--gold), transparent); }
-.brand-logos { overflow: hidden; }
+.brand-logos { overflow: visible; }
 .brand-track {
   display: flex;
-  width: max-content;
-  animation: brand-scroll-x 22s linear infinite;
+  justify-content: center;
 }
 .brand-group {
   display: flex;
-  flex: 0 0 auto;
+  flex: 1 1 auto;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   gap: clamp(26px, 4vw, 52px);
   padding: 0 clamp(14px, 2.4vw, 32px);
 }
-.brand-logos:hover .brand-track,
-.brand-logos:focus-within .brand-track { animation-play-state: paused; }
-@keyframes brand-scroll-x { to { transform: translateX(-50%); } }
 .wordmark {
   color: #201d16; opacity: .85; transition: all .25s; white-space: nowrap;
   display: flex; align-items: baseline; gap: 6px; cursor: default;
@@ -354,6 +366,7 @@ input, select, textarea { font-family: inherit; font-size: 14px; }
 .wm-mk { font-family: var(--serif); font-weight: 700; font-size: 22px; letter-spacing: 1px; }
 .wm-anneklein { font-family: var(--serif); font-weight: 600; font-size: 20px; letter-spacing: 2px; }
 .wm-coach { font-weight: 800; font-size: 22px; letter-spacing: 3px; }
+.wm-default { font-weight: 700; font-size: 18px; letter-spacing: 1.4px; text-transform: uppercase; }
 
 /* ---------- Categories ---------- */
 .cats-section { padding: 56px 0 10px; }
@@ -638,6 +651,16 @@ input, select, textarea { font-family: inherit; font-size: 14px; }
   padding: 26px; position: relative;
 }
 .pd-gallery img { border-radius: 12px; aspect-ratio: 1/1; object-fit: cover; width: 100%; }
+.pd-gallery .pd-thumbnails { display: flex; gap: 9px; margin-top: 12px; overflow-x: auto; }
+.pd-gallery .pd-thumbnails button {
+  width: 62px; height: 62px; flex: 0 0 62px; padding: 3px;
+  border: 1px solid var(--line); border-radius: 9px; overflow: hidden;
+}
+.pd-gallery .pd-thumbnails button.active,
+.pd-gallery .pd-thumbnails button:hover { border-color: var(--gold); }
+.pd-gallery .pd-thumbnails img {
+  width: 100%; height: 100%; aspect-ratio: auto; object-fit: cover; border-radius: 6px;
+}
 .pd-gallery .p-badge { font-size: 12.5px; padding: 7px 16px; }
 .pd-brand { color: var(--gold-deep); font-size: 12.5px; letter-spacing: 2.5px; text-transform: uppercase; font-weight: 600; }
 .pd-info :is(h1, h2) { font-family: var(--serif); font-size: clamp(26px, 3vw, 36px); font-weight: 700; margin: 8px 0 14px; }

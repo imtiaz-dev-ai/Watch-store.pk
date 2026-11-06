@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Watch Store — Time In Style | Luxury Watches in Pakistan</title>
-  <meta name="description" content="Shop authentic watches at Watch Store, Pakistan's premium destination for style and precision.">
+  <title>AI Collection — Premium Products in Pakistan</title>
+  <meta name="description" content="Shop premium products, accessories and essentials at AI Collection — modern style for everyday life.">
   <link rel="icon" type="image/png" href="assets/img/favicon.png">
   <link rel="stylesheet" href="assets/css/store.css">
 </head>
 <body data-page="home">
-  <noscript><div style="background:#7a1f1f;color:#fff;padding:10px 16px;text-align:center">Please enable JavaScript to browse Watch Store.</div></noscript>
+  <noscript><div style="background:#7a1f1f;color:#fff;padding:10px 16px;text-align:center">Please enable JavaScript to browse AI Collection.</div></noscript>
   <div id="site-header"></div>
   <main id="app"><!-- ============ HERO SLIDER ============ -->
     <section class="hero" id="hero-slider" aria-label="Featured collections">
@@ -59,33 +59,26 @@
     <section class="brands-strip">
       <div class="container">
         <div class="strip-title">Top Brands</div>
-        <div class="brand-logos reveal">
-          <a class="wordmark wm-rolex" href="#/search?brand=Rolex" aria-label="Shop Rolex watches">ROLEX</a>
-          <a class="wordmark wm-casio" href="#/search?brand=Casio" aria-label="Shop Casio watches">CASIO</a>
-          <a class="wordmark wm-seiko" href="#/search?brand=Seiko" aria-label="Shop Seiko watches">SEIKO</a>
-          <a class="wordmark wm-fossil" href="#/search?brand=Fossil" aria-label="Shop Fossil watches">FOSSIL</a>
-          <a class="wordmark wm-tissot" href="#/search?brand=Tissot" aria-label="Shop Tissot watches"><span class="tplus">T+</span>TISSOT</a>
-          <a class="wordmark wm-omega" href="#/search?brand=Omega" aria-label="Shop Omega watches"><span class="omega-sym">Ω</span> OMEGA</a>
-        </div>
+        <div class="brand-logos reveal" id="home-brand-logos" role="region" aria-label="Shop top brands"></div>
       </div>
     </section>
 
     <!-- ============ CATEGORIES ============ -->
     <section class="cats-section" id="categories">
       <div class="container cats-grid">
-        <a class="cat-card reveal" href="#/mens">
+        <a class="cat-card reveal" href="mens-watches.html">
           <img src="assets/img/cat-men.jpg" alt="Men's Watches">
           <div class="cat-info"><h3>Men's Watches</h3><span class="link-gold">Shop Now <svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="14"><path d="M4 12h15M13 6l6 6-6 6"/></svg></span></div>
         </a>
-        <a class="cat-card reveal" href="#/womens">
+        <a class="cat-card reveal" href="womens-watches.html">
           <img src="assets/img/cat-women.jpg" alt="Women's Watches">
           <div class="cat-info"><h3>Women's Watches</h3><span class="link-gold">Shop Now <svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="14"><path d="M4 12h15M13 6l6 6-6 6"/></svg></span></div>
         </a>
-        <a class="cat-card reveal" href="#/luxury">
+        <a class="cat-card reveal" href="luxury-watches.html">
           <img src="assets/img/cat-luxury.jpg" alt="Luxury Watches">
           <div class="cat-info"><h3>Luxury Watches</h3><span class="link-gold">Shop Now <svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="14"><path d="M4 12h15M13 6l6 6-6 6"/></svg></span></div>
         </a>
-        <a class="cat-card reveal" href="#/search?brand=">
+        <a class="cat-card reveal" href="search.html?type=watches">
           <img src="assets/img/hero-1.jpg" alt="All Watches">
           <div class="cat-info"><h3>All Watches</h3><span class="link-gold">Shop Now <svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="14"><path d="M4 12h15M13 6l6 6-6 6"/></svg></span></div>
         </a>
@@ -100,9 +93,23 @@
             <span class="eyebrow">Our Collection</span>
             <h2>Discover Our <em>Premium</em> Collection</h2>
           </div>
-          <a class="btn-outline" href="#/search?brand=">View All Products <svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a>
+          <a class="btn-outline" href="search.html">View All Products <svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a>
         </div>
         <div class="products-grid" id="featured-grid"></div>
+      </div>
+    </section>
+
+    <!-- ============ ACCESSORIES AND MORE ============ -->
+    <section class="section" id="home-accessories">
+      <div class="container">
+        <div class="sec-head">
+          <div>
+            <span class="eyebrow">More to Explore</span>
+            <h2>Accessories &amp; <em>More</em></h2>
+          </div>
+          <a class="btn-outline" href="search.html">View All Products <svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a>
+        </div>
+        <div class="products-grid" id="home-other-products-grid"></div>
       </div>
     </section>
 
